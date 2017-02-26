@@ -17,8 +17,8 @@ app.get('/article-two', function (req, res) {
   res.send('Article Two Served here');
 });
 
-app.get('/article-three', function (req, res) {
-  res.send('Article Three Served here');
+app.get('/google', function (req, res) {
+  res.sendFile(path.join(_dirname, 'ui', 'google.html'));
 });
 
 app.get('/ui/style.css', function (req, res) {
