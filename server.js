@@ -14,7 +14,7 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 app.get('/ui/kit.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'kit.png'));
+  res.sendFile(path.join(__dirname, 'ui', 'F1-2016-logo-wt.jpg'));
 });
 
 
