@@ -4,8 +4,8 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
-
-var article1 = {
+var articles= {
+    'article-one': {
     title:'Article One | IMAD',
     heading:'ARTICLE ONE',
     link:`
@@ -17,8 +17,28 @@ var article1 = {
             <p>Content for first Article. Content for first Article. Content for first Article. Content for first Article. Content for first Article. Content for first Article. Content for first Article. Content for first Article. Content for first Article.</p>
             <p>Content for first Article. Content for first Article. Content for first Article. Content for first Article. Content for first Article. Content for first Article. Content for first Article. Content for first Article. Content for first Article.</p>
             <p>Content for first Article. Content for first Article. Content for first Article. Content for first Article. Content for first Article. Content for first Article. Content for first Article. Content for first Article. Content for first Article.</p>`
-}
-
+    },
+    'article-two':{
+        title:'Article Two | IMAD',
+        heading:'ARTICLE TWO',
+        link:`
+            <a href="/article-one">go to Article 1</a>
+            <a href="/article-three">go to Article 3</a>
+                `,
+        content: `
+                <p>Content for Second Article.</p>`
+    },
+    'article-three':{
+        title:'Article Three | IMAD',
+        heading:'ARTICLE THREE',
+        link:`
+            <a href="/article-two">go to Article 2</a>
+            <a href="/">HomePage</a>
+                `,
+        content: `
+                <p>Content for Third Article.</p>`
+    },
+};
 function createtemp(data){
     var title=data.title;
     var heading=data.heading;
@@ -46,20 +66,15 @@ function createtemp(data){
     `;
     return htmltemp;
 }
+
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/article-one', function (req, res) {
-  res.send(createtemp(article1));
-});
-
-app.get('/article-two', function (req, res) {
-  res.sendFile(path.join(__dirname,'ui','a2.html'));
-});
-
-app.get('/article-three',function (req, res) {
-    res.sendFile(path.join(__dirname,'ui','a3.html'));
+app.get('/:articleName', function (req, res) {
+  var articlename=reqs.param.articleName;
+  res.send(createtemp(articles[articlename]));
 });
 
 app.get('/ui/style.css', function (req, res) {
