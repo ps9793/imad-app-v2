@@ -1,11 +1,12 @@
 body {
     font-family: sans-serif;
-    background-color: lightgrey;
+    background-color: black;
     margin-top: 75px;
 }
 
 .center {
     text-align: center;
+    color: yellow;
 }
 
 .text-big {
@@ -17,7 +18,7 @@ body {
 }
 
 .img-medium {
-    margin-left: 37%;
+    margin-left: 40%;
 }
 
 .para{
@@ -57,8 +58,10 @@ body {
 
 .footer{
     text-align: center;
+    color: cyan;
 }
 
 .text{
     text-align: center;
+    color: orange;
 }
