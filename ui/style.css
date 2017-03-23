@@ -46,8 +46,8 @@ body {
 }
 
 .img{
-    background-color: #fafafa;
-    border-radius: 5%;
+    background-color: black;
+    border-radius: 50%;
     border-top-left-radius: 15%;
     border-top-right-radius: 15%;
     border-bottom-right-radius: 15%;
@@ -56,5 +56,4 @@ body {
     overflow: hidden;
     overflow-x: hidden;
     overflow-y: hidden;
-    position: relative;
 }
