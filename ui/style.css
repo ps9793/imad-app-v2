@@ -47,7 +47,7 @@ body {
 
 .img{
     background-color: #fafafa;
-    border-radius: 50%;
+    border-radius: 10%;
     box-sizing: border-box;
     overflow: hidden;
 }
