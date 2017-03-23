@@ -47,11 +47,11 @@ body {
 
 .img{
     background-color: #fafafa;
-    border-radius: 50%;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-bottom-left-radius: 50%;
+    border-radius: 15%;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
+    border-bottom-right-radius: 15%;
+    border-bottom-left-radius: 15%;
     box-sizing: border-box;
     overflow: hidden;
     overflow-x: hidden;
