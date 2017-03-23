@@ -54,3 +54,11 @@ body {
     overflow-y: hidden;
     max-width: 35%;
 }
+
+.footer{
+    text-align: center;
+}
+
+.text{
+    text-align: center;
+}
