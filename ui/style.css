@@ -45,3 +45,9 @@ body {
     margin: 0 auto;
 }
 
+.img{
+    background-color: #fafafa;
+    border-radius: 50%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
