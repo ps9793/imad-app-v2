@@ -47,7 +47,14 @@ body {
 
 .img{
     background-color: #fafafa;
-    border-radius: 10%;
+    border-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
     box-sizing: border-box;
     overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
 }
