@@ -78,7 +78,7 @@ app.get('/:articleName', function (req, res) {
 });
 
 app.get('/counter', function (req, res) {
-  counter = counter+1;
+  counter = counter + 1;
   res.send(counter.toString());
 });
 
